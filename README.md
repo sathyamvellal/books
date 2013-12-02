@@ -5,7 +5,7 @@ This repo contains the books that I'm writing. My inspiration for authoring thes
 
 ### Currently Writing
 
-1. Sailing in the C
+1. Sailing in the C  
     Expect beta in September 2014
 
 ### Planned Books : 
