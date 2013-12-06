@@ -1,6 +1,23 @@
-\documentclass[a4paper,droidsans,10pt]{book}
+\documentclass[11pt,a4paper,twoside]{memoir}
 \usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{geometry}
+\usepackage{titlesec}  %needs recent version of »titlesec«
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{setspace}
+\setmainfont{PT Sans}
+
+\input{titlecover}
 
 \begin{document}
+\frontmatter
+\titleGM
+\tableofcontents
+\mainmatter
+
+\OnehalfSpacing
+\input{part0}
+\input{part1}
 
 \end{document}

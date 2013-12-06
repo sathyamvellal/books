@@ -1,0 +1,29 @@
+\newlength\drop
+\newcommand*{\titleGM}{%
+\thispagestyle{empty}
+\begingroup% Gentle Madness
+\drop = 0.1\textheight
+\vspace*{\baselineskip}
+\vfill
+\hbox{%
+\hspace*{0.2\textwidth}%
+\rule{1pt}{\dimexpr\textheight-28pt\relax}%
+\hspace*{0.05\textwidth}%
+\parbox[b]{0.75\textwidth}{
+\vbox{%
+\vspace{\drop}
+{\noindent\HUGE\bfseries Sailing in the C}\\[2\baselineskip]
+{\Large\itshape A guide to the C Programming Language}\\[.37\baselineskip]
+{\Large Sathyam M Vellal}\par
+\vspace{0.5\textheight}
+{\noindent }\\[\baselineskip]
+}% end of vbox
+}% end of parbox
+}% end of hbox
+\vfill
+\null
+\endgroup}
+
+\title{\Huge\textbf{Sailing in the C}}
+\author{\Large\textbf{Sathyam M Vellal}}
+\date{\Large{\today}}
