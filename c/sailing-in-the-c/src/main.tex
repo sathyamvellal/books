@@ -1,12 +1,16 @@
 \documentclass[11pt,a4paper,twoside]{memoir}
-\usepackage[utf8]{inputenc}
+\RequireXeTeX
+%\usepackage[utf8]{inputenc}
 \usepackage{lipsum}
 \usepackage{geometry}
 \usepackage{titlesec}  %needs recent version of »titlesec«
 \usepackage{xcolor}
 \usepackage{fontspec}
 \usepackage{setspace}
+\usepackage{minted}
+\usepackage{hyperref}
 \setmainfont{PT Sans}
+\setmonofont{Inconsolata}
 
 \input{titlecover}
 
@@ -15,6 +19,9 @@
 \titleGM
 \tableofcontents
 \mainmatter
+
+\definecolor{mintedbg}{rgb}{0.95,0.95,0.95}
+\newminted{c}{baselinestretch=0.85,bgcolor=mintedbg,linenos}
 
 \OnehalfSpacing
 \input{part0}
