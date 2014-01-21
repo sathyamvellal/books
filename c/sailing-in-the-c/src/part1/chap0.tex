@@ -13,7 +13,7 @@
 \end{itemize}
 
 \section{Program \#1: Hello World}
-And finally, after all that theory, we're now down to business. \textbf{Hello World} is a tradition I must embrace! So I'm now going to present to you a minimalistic program in C which simply displays ``Hello World". What I'll do, is show you the program and then explain what it does. So here it goes - \\
+And finally, after all that theory, we're now down to business. \textbf{Hello World} is a tradition I must embrace! So I'm now going to present to you a minimalistic program in C which simply displays "Hello World". What I'll do, is show you the program and then explain what it does. So here it goes - \\
 
 \begin{ccode}
 #include <stdio.h>
@@ -26,5 +26,11 @@ int main()
 \end{ccode}
 \\
 
-Okay, so that's like 7 lines of code but it says a lot about a C Program!
+Okay, so that's like 7 lines of code but it says a lot about a C Program! So let's start the dissection.
 
+\begin{itemize}
+ \item We begin the program with the line \hilight{\#include <stdio.h>}. What this does is include a "library header file". I'll talk about header files soon. Just know for now that this is required to use the function \hilight{printf} which we use to display stuff on the console. 
+ \item We are then declaring the \hilight{main} function. 
+ \item We use \hilight{printf} to display "Hello World".
+ \item \hilight{return 0} is to indicate that our program executed succesfully without any errors.
+\end{itemize}
