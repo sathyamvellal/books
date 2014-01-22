@@ -12,7 +12,7 @@ In this chapter, I'll be talking about some preliminary concepts which I believe
 
 So let's begin. I consider programming to be an art. And just like art, there is a structured way to learn good programming. Many people want some problem to be solved and all they do is try to learn some programming language and try to implemenet the solution they designed. It is however important to know when implementing a solution, the programming language also plays a very important solution. Are you wondering what this is? There exists thousands of natural languages all over the world. They were designed mainly to communicate. But programming languages are carefully designed to solve a purpose and reach a broac variety of problem sets. So its always very important to keep in mind the reasons behind the choice of the programming language, the way the implementation needs to be to be effective so that it can exploit the features provided by the language. This makes us better programmers. Not just programming in some language. 
 
-You already know why C came into existence from the previous chatper. What we'll do now is explore how C is structured so that when I actually get down to explaining C, you'll be in a better position to understand. For this, we'll first explore how C is structured. 
+You already know why C came into existence from the previous chatper. Pl What we'll do now is explore how C is structured so that when I actually get down to explaining C, you'll be in a better position to understand. For this, we'll first explore how C is structured. Please bear with me in this chapter. There might be too much theory/information present which you may feel like skipping, but I guarantee you that these are the most important concepts that you need to know about writing and developing in C.
 
 Important points first
 \begin{itemize}
@@ -22,4 +22,18 @@ Important points first
 \item Just like how we have items and objects in the house representing something, we have representational entities which are usually called \textbf{variables}. 
 \end{itemize}
 
-If you didn't get the basic overview of a C Program from above, that's fine. You have tons of chapters ahead to take you deep into the C!. 
+If you didn't get the basic overview of a C Program from above, that's fine. You have tons of chapters ahead to take you deep into the C! Wait, that's not the end. There's more to it. The points above just give an overview of what a C Program contains. The journey doesn't end there. We compile our code and run it. And there quite a lot of steps involved in this process too!
+
+\begin{itemize}
+\item A C Program starts from \texbf{editing/writing} the program source, the outline for which was given in the previous set of points. 
+\item Once a program is written, the code is then set for compiling which is actually a 3 stage process.
+\begin{itemize} 
+\item The compiler first does something called \textbf{Preprocessing} where it works on the \textit{Preprocessor directives} we've written to do some text manipulation.
+\item Now, the code is ready for \textbf{actual compilation} where the source code, written in C language, is converted to machine code or machine executable format or techincally termed as \textbf{object code}.
+\item A C Program may be written in several files and may make use of libraries (which we'll explore later) which are compiled to object files (in the previous step). So the compiler now does something called \textbf{linking} where it links different object files and library files together to create the \textit{image} which is executable.
+\end{itemize}
+\item When the final executable image is set for execution, this image is loaded to the memory of the machine and also any required \textit{shared libraries} (we'll be exploring this later) are loaded. 
+\item The binary image that's been loaded is executed by the operating system as it creates a new process and executes. 
+\end{itemize}
+
+I suggest you take a break now for a few minutes! So let's do some recap now. We learnt what a C Program mainly contains. We learnt the journey a C Program takes from being written till its executed by the operating system. If you are all confused, I suggest you read the two sections once more for clarity. Right then, let's start with the typical first program - Hello World
