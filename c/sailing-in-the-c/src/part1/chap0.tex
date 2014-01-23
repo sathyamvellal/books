@@ -13,7 +13,7 @@
 \end{itemize}
 
 \section{Program \#1: Hello World}
-And finally, after all that theory, we're now down to business. \textbf{Hello World} is a tradition I must embrace! So I'm now going to present to you a minimalistic program in C which simply displays "Hello World". What I'll do, is show you the program and then explain what it does. So here it goes - \\
+And finally, after all that theory, we're now down to business. \textbf{Hello World} is a tradition I must embrace! So I'm now going to present to you a minimalistic program in C which simply displays ``Hello World". What I'll do, is show you the program and then explain what it does. So here it goes - \\
 
 \begin{ccode}
 #include <stdio.h>
@@ -29,13 +29,15 @@ int main()
 Okay, so that's like 7 lines of code but it says a lot about a C Program! Let's look at each aspect in brief and then in detail. By the way, I hope you remember the 2 sets of points which I discussed in the previous chapter, you can see them in action in here.
 
 \begin{itemize}
-\item Firstly we include a file called \textit{stdio.h} which is a header file. This is done by the \textit{\#include} preprocessor directive.
-\item We then define the \textit{main} function. Hope you remember from the previous chapter that this function is the entry to our program. 
-\item In \textit{main} we have two \textbf{statements} which are analogous to meaningful sentences in English, for a programming language. 
-\item The first statement prints a \textit{string} - "Hello World\n" on the screen. 
+\item Firstly we include a file called \hilight{stdio.h} which is a header file. This is done by the \hilight{\#include} preprocessor directive.
+\item We then define the \hilight{main} function. Hope you remember from the previous chapter that this function is the entry to our program. 
+\item In \hilight{main} we have two \textbf{statements} which are analogous to meaningful sentences in English, for a programming language. 
+\item The first statement has a function being called, \hilight{printf} which prints a \textit{string} - "Hello World\n" on the screen. 
 \item The second statement returns an \textit{integer} back (back to whom? We'll see that in a short while), the integer in this case being zero. 
 \end{itemize}
 
+That's an overview of the program that has been presented above. So now let's got on to things in detail!
+
 \begin{itemize}
-\item 
+\item All preprocessor directives begin with \hilight{\#}. What \hilight{\#include} does is include the contents of the file mentioned. If the filename is enclosed within angular brackets, then its present in the library path (typically /usr/include). The file that we are including is \hilight{stdio.h} which is a header file for the Standard Input and Output. Header files are like blueprints. To construct a building, architects design a blueprint first. This helps them visualize how the building will be. Note that its not constructed yet. As a customer, I don't know how it'll look, the architect has that picture in mind. All that I know is how the house will be structured, how many rooms it has, what kind of a design its going to be built with, the color of walls and the ceiling, the flooring and everything else. But I do not have the picture. I do not have anything concrete on how the building will look like till its finished. But the architect who designed it knows best. A header file, similarly, contains blueprints (also called prototype) to a set of functions. \hilight{stdio.h} contains such prototypes for all input and output functions in the C language, That means, the function that printed on the screen in this program, \hilight{printf}, has its prototype declared in \higlight{stdio.h}. And why? Because its one of the standard output functions.
 \end{itemize}
